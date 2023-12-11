@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LTS Contact</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main>
+    <div class="container bg-dark text-white text-center py-0" data-bs-theme="dark">
+        <section class="header__section">
+            <div class="header sticky-top z-1">
+                <div class="row bg-dark-subtle">
+                    <div class="col pt-3 pb-1">
+                        <h2>🌮 Little Taco Shop 🌮</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg bg-dark">
+                        <div class="container-fluid">
+                            <a class="navbar-brand border border-3 border-light p-2 rounded h-100" href="#">LTS</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Переключатель навигации">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav w-100 justify-content-evenly">
+                                    <a class="nav-link border-bottom border-3 border-light-subtle" href="index.html">Menu</a>
+                                    <a class="nav-link border-bottom border-3 border-light-subtle" href="hours.html">Hours</a>
+                                    <a class="nav-link active border-bottom border-3 border-light" aria-current="page" href="#">Contact</a>
+                                    <a class="nav-link border-bottom border-3 border-light-subtle" href="about.html">About</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-1">
+                <div class="img-wrapper d-flex align-items-center justify-content-center rounded rounded-4 mt-4 p-0 overflow-hidden position-relative">
+                    <img src="assets/img/taco-contact.jpg" alt="..." title="Our Tacos" class="h-100 w-100 object-fit-cover">
+                </div>
+            </div>
+        </section>
+        <div class="row text-start mt-4 px-4">
+            <h2 class="px-5 text-success mb-4">Our Location</h2>
+            <address class="fst-italic">
+                <p>555 Taco Temptation Lame, Suite T</p>
+                <p class="mb-0">Kansas City, MO 55555-55555</p>
+            </address>
+            <p class="fst-italic">Phone: <a href="tel:5555555555" class="text-white">555-555-5555</a></p>
+        </div>
+        <hr class="my-5">
+        <div class="row text-start mt-5 px-4">
+            <h2 class="px-5 text-success mb-4">Contact Form</h2>
+        </div>
+        <form>
+            <div class="mt-1 mb-4">
+                <div class="px-4 text-start">
+                    <label for="name" class="fw-semibold mb-3 form-label">Name:</label>
+                    <input type="text" name="name" id="name" class="form-control fs-5 bg-dark-subtle" placeholder="your name">
+                </div>
+            </div>
+            <div class="mb-4 px-4 text-start">
+                <label for="email" class="fw-semibold mb-3 form-label">Email:</label>
+                <input type="email" name="email" id="email" class="form-control fs-5 bg-dark-subtle" placeholder="your email.com">
+            </div>
+            <div class="mb-4 px-4 text-start">
+                <label for="message" class="fw-semibold mb-3 form-label d-block">Message:</label>
+                <textarea name="message" id="message" rows="10" placeholder="Type your message here" class="form-control fs-5 bg-dark-subtle"></textarea>
+                <button class="btn btn-success btn-lg mt-3 me-2" type="submit">Send</button>
+                <button class="btn btn-success btn-lg mt-3 me-3" type="reset">Clear</button>
+            </div>
+        </form>
+        <div class="my-5 back-to-top">
+            <a href="#" class="fs-4 text-white">Back to Top</a>
+        </div>
+        <p class="bg-dark-subtle text-white position-sticky sticky-bottom mb-0 copyrights fs-5">Copyright &copy 2023 Little Taco Shop</p>
+    </div>
+</main>
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

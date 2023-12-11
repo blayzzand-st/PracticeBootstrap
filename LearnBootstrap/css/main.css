@@ -1,0 +1,132 @@
+:root {
+    --bg-color: #2e3631;
+    --bs-success-rgb: 18, 178, 81;
+    --fc-dark: #1d1d1f;
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: linear-gradient(to bottom, var(--bg-color), #457A62FF);
+    font-size: 1.5rem;
+}
+
+table {
+    width: 100% !important;
+    border-collapse: separate !important;
+    border-spacing: 0.2rem !important;
+}
+
+thead th:first-child {
+    border-top-left-radius: 20px;
+}
+
+thead th:last-child {
+    border-top-right-radius: 20px;
+}
+
+tfoot .table__element {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+cite a:hover {
+    color: rgb(var(--bs-success-rgb)) !important;
+}
+
+cite a:active, p a:active {
+    opacity: 0.5;
+}
+
+aside {
+    height: 200px;
+}
+
+p a:hover {
+    color: var(--bs-teal) !important;
+}
+
+hr {
+    box-shadow: 0 0 15px 5px #12B251FF !important;
+    opacity: 0.8 !important;
+}
+
+.form-control:focus {
+    border-color: var(--bs-green);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(var(--bs-success-rgb), 0.8);
+    background-color: var(--bs-dark-bg-subtle);
+}
+
+.back-to-top a:hover {
+    color: var(--bs-green) !important;
+}
+
+.back-to-top a:active {
+    opacity: 0.5;
+}
+
+.img-wrapper {
+    background-color: lightslategray;
+    width: 95%;
+    background-size: cover;
+}
+
+.greeting {
+    left: 5% !important;
+}
+
+.menu__header, .table__element {
+    font-size: 2rem;
+}
+
+tbody td, .menu__header, .table__element {
+    border: 1px ridge var(--bs-teal) !important;
+}
+
+.copyrights {
+   margin-left: -0.75rem;
+   margin-right: -0.75rem;
+}
+
+.nav-link:hover {
+    border-bottom-color: white !important;
+}
+
+.nav-link:active {
+    opacity: 0.7;
+}
+
+.welcome {
+    transform-style: preserve-3d;
+    transform-origin: top;
+    transform: perspective(900px) rotateX(-90deg);
+    animation: showWelcome 2s ease 0.5s forwards;
+}
+
+@keyframes showWelcome {
+    0% {
+        transform: rotateX(-90deg);
+    }
+
+    50% {
+        transform: rotateX(30deg);
+    }
+
+    90% {
+        transform: rotateX(-10deg);
+    }
+
+    100% {
+        transform: rotateX(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1rem !important;
+        overflow-x: hidden;
+    }
+
+    .menu__header, .table__element {
+        font-size: 1.25rem;
+    }
+}
